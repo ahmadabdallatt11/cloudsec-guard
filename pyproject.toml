@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cloudsec-guard"
+version = "1.0.0"
+description = "Production-grade cloud & container security auditor with AI remediation"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.2.1",
+    "ruamel.yaml>=0.17.0",
+    "google-generativeai>=0.3.0"
+]
+
+[project.scripts]
+cloudsec-guard = "cloudsec_guard.cli:app"

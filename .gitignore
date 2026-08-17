@@ -1,0 +1,25 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Environment Variables & Secrets
+.env
+
+# Python Caches & Build Files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+
+# Local Logs & Audit Trails
+*.log
+cloudsec_guard.log
+
+# IDE Specific
+.vscode/
+.idea/
