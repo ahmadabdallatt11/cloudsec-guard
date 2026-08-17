@@ -1,22 +1,33 @@
-CloudSec-Guard 🛡️
-Infrastructure Security Auditor | Shift-Left DevSecOps Tool
+# 🛡️ CloudSec-Guard
 
-CloudSec-Guard is a production-grade CLI security auditor designed to secure your Infrastructure-as-Code (IaC) before it reaches deployment. It performs deep static analysis on Dockerfiles and Kubernetes manifests to detect misconfigurations, audit security posture, and remediate vulnerabilities on the fly using Google Gemini AI.
+### *Proactive Infrastructure Security Auditor for DevSecOps*
 
-🚀 Why CloudSec-Guard?
-Modern cloud security happens too late. CloudSec-Guard enables Shift-Left Security by auditing your infrastructure configs directly in your terminal, preventing vulnerabilities like root privilege escalation, container escapes, and node resource exhaustion before they cause production incidents.
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![Security](https://img.shields.io/badge/Security-CIS_Benchmarks-red.svg)]()
+[![License](https://img.shields.io/badge/License-MIT-green.svg)]()
 
-🔑 Key Features
-Static Analysis Engine: Audits Dockerfile and K8s YAML against CIS Benchmarks.
+---
 
-AI-Powered Remediation: Contextual vulnerability fixing using Google Gemini AI.
+## 🚀 Why CloudSec-Guard?
 
-Security by Design:
+Most security tools scan **after** the damage is done. **CloudSec-Guard** enables **Shift-Left Security** by auditing your infrastructure configs directly in your terminal, preventing vulnerabilities before they even reach a CI/CD pipeline.
 
-Path Traversal Protection (LFI Prevention).
+> "Don't just scan misconfigurations—**remediate** them with AI."
 
-Secure YAML Deserialization (Prevents Injection).
+---
 
-Centralized Audit Trail (Production-grade Logging).
+## ✨ Core Features
 
-Modern CLI: Built with Typer & Rich for a fast, colorful, and interactive user experience.
+### 🔍 Static Security Analysis
+*   **Docker Hardening:** Detects root execution, latest tags, and uncleaned package caches.
+*   **Kubernetes Auditing:** Flags privileged containers, missing resource limits, and insecure runAsNonRoot policies.
+
+### 🤖 AI-Driven Remediation
+Powered by **Google Gemini AI**. When a vulnerability is found, the tool provides:
+*   A concise **security impact analysis**.
+*   A **corrected, production-ready code snippet** on the spot.
+
+### 🛡️ Security-First Architecture
+*   **Path Traversal Protection:** Locked down against malicious file access (LFI).
+*   **Safe Parsing:** Protects against YAML Object Injection.
+*   **Audit-Ready:** Centralized logging for every scan event.
